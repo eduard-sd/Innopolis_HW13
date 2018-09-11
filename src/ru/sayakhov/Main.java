@@ -11,9 +11,11 @@ public class Main {
         Food banan = new Food("Banan", false);
         Food potato = new Food("Potato", true);
         Food wiskas = new Food("Wiskas",false);
+        Food chocolate = new Food("Chocolate",true);
 
 
         try{
+            baby1.timeToEat(chocolate);
             baby1.timeToEat(banan);
             baby1.timeToEat(potato);
             baby1.timeToEat(wiskas);

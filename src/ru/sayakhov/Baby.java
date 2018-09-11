@@ -17,7 +17,7 @@ public class Baby {
     }
 
     public void timeToEat(Food food){
-        if(!food.isCompatibility()) {
+        if(food.isCompatibility()) {
             System.out.println("Спасибо мама целую. Люблю "+food.getName());
 
         }else {
