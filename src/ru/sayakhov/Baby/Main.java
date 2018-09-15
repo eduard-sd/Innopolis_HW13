@@ -29,6 +29,8 @@ public class Main {
         }catch (CompatibilityException ex){
             System.out.println(ex.getMessage());
 
+        }finally {
+            System.out.println("Спасибо мама, целую.");
         }
 
 
