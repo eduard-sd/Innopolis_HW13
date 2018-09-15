@@ -16,12 +16,13 @@ public class Baby {
         this.name = name;
     }
 
-    public void timeToEat(Food food){
+    public void timeToEat(Food food) throws CompatibilityException {
         if(food.isCompatibility()) {
             System.out.println("Спасибо мама целую. Люблю "+food.getName());
 
         }else {
-            throw new RuntimeException();
+            //throw new RuntimeException();
+            throw new CompatibilityException("Это не ем");
         }
     }
 }

@@ -19,10 +19,16 @@ public class Main {
             baby1.timeToEat(banan);
             baby1.timeToEat(potato);
             baby1.timeToEat(wiskas);
-        }catch (RuntimeException ex){
-            System.out.println("Ребенок это не ест");
-            System.err.println("Ребенок это не ест - err обогнал out");
-            ex.printStackTrace();
+        }catch (CompatibilityException ex){
+            System.out.println(ex.getMessage());
+
+        }try{
+
+            baby1.timeToEat(potato);
+            baby1.timeToEat(wiskas);
+        }catch (CompatibilityException ex){
+            System.out.println(ex.getMessage());
+
         }
 
 
