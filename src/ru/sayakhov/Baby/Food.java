@@ -1,4 +1,4 @@
-package ru.sayakhov;
+package ru.sayakhov.Baby;
 
 public class Food {
     private String name;
