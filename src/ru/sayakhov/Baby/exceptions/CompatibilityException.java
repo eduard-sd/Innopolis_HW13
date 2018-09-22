@@ -1,4 +1,4 @@
-package ru.sayakhov.Baby;
+package ru.sayakhov.Baby.exceptions;
 
 public class CompatibilityException extends Exception {
     public CompatibilityException() {

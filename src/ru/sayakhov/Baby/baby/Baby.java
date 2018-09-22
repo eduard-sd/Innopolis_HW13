@@ -1,4 +1,7 @@
-package ru.sayakhov.Baby;
+package ru.sayakhov.Baby.baby;
+
+import ru.sayakhov.Baby.exceptions.CompatibilityException;
+import ru.sayakhov.Baby.food.Food;
 
 public class Baby {
     private String name;
@@ -16,12 +19,11 @@ public class Baby {
         this.name = name;
     }
 
-    public void timeToEat(Food food) throws CompatibilityException {
-        if(food.isCompatibility()) {
-            System.out.println("Спасибо мама целую. Люблю "+food.getName());
+    public void eat(Food food) throws CompatibilityException {
+        if(food.getName().length() > 3) {
+            System.out.println("Ам ам вкусно "+food.getName());
 
         }else {
-            //throw new RuntimeException();
             throw new CompatibilityException("Это не ем");
         }
     }
